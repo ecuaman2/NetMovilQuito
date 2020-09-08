@@ -11,6 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="css/cita.css?v0.3">
 	<link rel="stylesheet" type="text/css" href="css/gracias.css?v0.3">
 	<link rel="stylesheet" type="text/css" href="css/footer.css?v0.3">
+	<!--<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">-->
 
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>    
