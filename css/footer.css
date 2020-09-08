@@ -1,0 +1,19 @@
+footer{
+	background-color: rgba(190,139,227,0.2);
+	color: #cccaca;
+	font-size: 14px;
+	padding: 30px 30px 30px 30px;
+	text-align: center;
+}
+
+footer .cont_footer div{
+	padding: 2px;
+}
+
+
+@media (min-width: 600px){
+
+	footer{
+}
+
+}

@@ -1,0 +1,263 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+
+body{
+
+    font-family: Century Gothic;
+
+}
+
+nav{
+  background: #8411ab;
+  height: 80px;
+  width: 100%;
+}
+
+nav a{
+  cursor: pointer;
+}
+
+.logo h1{
+  color: #FFF;
+  height: 40px;
+  margin-left: 30px;
+  margin-top: 9px;
+}
+
+nav label.logo{
+  display: flex;
+  height: 100%;
+
+  width: 23%;
+  float: left;
+  align-items: center;
+  font-weight: 900;
+}
+
+nav label.logo a img{
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+
+}
+
+nav ul{
+  width: 70%;
+  float: left;
+
+  justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+nav ul .menu_java{
+  display: none;
+}
+
+nav ul li{
+  width: 100%;
+  display: flex;
+  line-height: 80px;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+nav ul li a.active{
+  width: 200px;
+    color: #F5F5F5;
+    font-family: Arial Black;
+  font-size: 17px;
+  text-transform: uppercase;
+  justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+nav a.active:hover{
+  width: 100%;
+  background: #a425cf;
+  transition: .5s;
+}
+
+nav .t_miencraft:hover .submenu{
+ transition: all 0.5s;
+  visibility: visible;
+  display: block;
+}
+
+nav .submenu{
+  width: 325px;
+  display: none;
+  position: absolute;
+  top: 80px;
+  background: #2c3e50;
+  color: #fff;
+  padding: 5px 5px 5px 5px;
+  margin: 0;
+  border-radius: 3px;
+  z-index: 1;
+
+}
+nav .submenu li a{
+  width: auto;
+  height: 50px;
+    display: flex;
+    text-decoration: none;
+    color: #F5F5F5;
+    font-family: Arial Black;
+  justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav .submenu li.java:hover{
+  height: 50px;
+  transition: all 0.5s;
+  background-color: #8411ab;
+    color: #FFF;
+    text-shadow: 2px 2px 2px blue;
+}
+
+nav .submenu li.bedrock:hover{
+  height: 50px;
+  transition: all 0.5;
+  background-color: #8411ab;
+    color: #FFF;
+    text-shadow: 2px 2px 2px blue;
+}
+
+nav .company:hover .submenu_company{
+ transition: all 0.5s;
+  visibility: visible;
+  display: block;
+}
+
+nav .submenu_company{
+  width: 325px;
+  display: none;
+  position: absolute;
+  top: 80px;
+  background: #2c3e50;
+  color: #fff;
+  padding: 5px 5px 5px 5px;
+  margin: 0;
+  border-radius: 3px;
+  z-index: 1;
+
+}
+
+nav .submenu_company li {
+  width: 100%;
+}
+
+nav .submenu_company li a{
+  width: auto;
+  height: 50px;
+    display: flex;
+    text-decoration: none;
+    color: #F5F5F5;
+    font-family: Arial Black;
+  justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+nav .submenu_company li.bedrock:hover{
+  height: 50px;
+  transition: all 1s;
+  background-color: #8411ab;
+    color: #FFF;
+    text-shadow: 2px 2px 2px blue;
+}
+
+
+
+nav .checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+nav #check{
+  display: none;
+}
+
+/*Responsive*/
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 900px){
+
+  nav ul .menu_java{
+  display: block;
+  }
+
+  nav ul li a.active{
+  width: 100%;
+  height: 60px;
+    color: #F5F5F5;
+    font-family: Arial Black;
+  font-size: 17px;
+  text-transform: uppercase;
+  justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+  nav ul{
+  width: 100%;
+  float: left;
+
+  justify-content: center;
+    align-items: center;
+    display: block;
+    z-index: 1;
+}
+
+  nav .checkbtn{
+    display: block;
+
+  }
+  nav ul{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    padding: 5px;
+  }
+
+  nav ul li{
+    display: block;
+  }
+  nav ul li a{
+    width: 100%;
+    height: 100%;
+  }
+  nav a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  nav #check:checked ~ ul{
+    left: 0;
+  }
+}

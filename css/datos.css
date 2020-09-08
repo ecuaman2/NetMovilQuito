@@ -1,0 +1,82 @@
+#datos_personales{
+	width: 100%;
+	background-color: #444;
+	color: #FFF;
+	border-radius: 5px;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+    padding: 30px;
+    display: none;
+}
+
+#datos_personales form{
+	margin-top: 20px;
+}
+
+
+#datos_personales form input{
+	width: 100%;
+	padding: 8px;
+	font-size: 20px;
+	border-radius: 5px;
+	border-style: none;
+	margin-bottom: 5px;
+}
+
+
+
+#datos_personales input, textarea { 
+	font-family: FontAwesome, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+
+#datos_personales form .fecha_corta{
+	width: 65px;
+	display: inline-block;
+}
+
+#datos_personales form .fecha_larga{
+	width: 100px;
+	display: inline-block;
+}
+
+
+#datos_personales form textarea{
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border-style: none;
+	font-size: 20px;
+}
+
+#datos_personales form input[type=submit]{
+	width: 100%;
+	padding: 15px;
+	background-color: #dc3545;
+	color: #FFF;
+	border-radius: 5px;
+	border-style: none;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+#datos_personales form input[type=submit]:hover{
+	background-color: #f54555;
+}
+
+@media (max-width: 600px){
+
+	#datos_personales form .fecha_corta{
+		width: 25%;
+		display: inline-block;
+}
+
+	#datos_personales form .fecha_larga{
+		width: 46%;
+		display: inline-flex;
+}
+
+}

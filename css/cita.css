@@ -1,0 +1,83 @@
+#contenedor_cita{
+	width: 100%;
+	background-color: #444;
+	color: #FFF;
+	border-radius: 5px;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+    padding: 30px;
+    display: none;
+}
+
+#contenedor_cita form{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#contenedor_cita form .dia{
+	width: auto;
+	padding: 8px;
+	font-size: 20px;
+	border-radius: 5px;
+	border-style: none;
+	margin-bottom: 5px;
+	background-color: #BE8BE3;
+}
+
+
+#contenedor_cita form .dia span{
+	width: auto;
+	padding: 8px;
+	font-size: 20px;
+	border-radius: 5px;
+	border-style: none;
+	margin-bottom: 5px;
+}
+
+#contenedor_cita form .fecha_corta{
+	width: 65px;
+	display: inline-block;
+}
+
+#contenedor_cita form .fecha_larga{
+	width: 100px;
+	display: inline-block;
+}
+
+
+#contenedor_cita form textarea{
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border-style: none;
+	font-size: 20px;
+}
+
+#contenedor_cita button{
+	width: 100%;
+	padding: 15px;
+	background-color: #dc3545;
+	color: #FFF;
+	border-radius: 5px;
+	border-style: none;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+#contenedor_cita button:hover{
+	background-color: #f54555;
+}
+
+@media (max-width: 600px){
+
+	#contenedor_cita form .fecha_corta{
+		width: 25%;
+		display: inline-block;
+}
+
+	#contenedor_cita form .fecha_larga{
+		width: 46%;
+		display: inline-flex;
+}
+
+}

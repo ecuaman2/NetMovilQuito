@@ -1,0 +1,129 @@
+
+/*IMAGEN EN GRANDE*/
+
+.cont_img{
+
+  background-image: url("../galeria/portada3.jpeg");
+  background-color: #001b29; /* Used if the image is unavailable */
+  height: 550px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+.cont_info{
+	width: auto;
+	height: 400px;
+	color: #FFF;
+	padding: 30px;
+}
+.cont_info .titulo{
+	width: 50%;
+	padding: 10px;
+	margin-top: 20px;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.cont_info .titulo h1{
+	display:flex;
+	font-size: 60px;
+	line-height: 60px;
+}
+
+.cont_info .cont_des{
+	width: auto;
+  	font-family: Century Gothic;
+
+}
+
+.atributos2{
+	margin-top: 20px;
+	width: 100%;
+	float: left;
+}
+
+.cont_des span p{
+	width: auto;
+	font-size: 20px;
+	margin-top: 20px;
+	vertical-align: middle;
+}
+
+.cont_des span img{
+	height: auto;
+	float: left;
+	margin-right: 10px;
+
+}
+
+.botones{
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.botones .servicio{
+	display: flex;
+	float: left;
+	padding: 10px;
+	margin-top: 50px;
+
+}
+
+.botones button{
+	width: 200px;
+	padding: 10px;
+	color: #FFF;
+  	font-family: Century Gothic;
+	font-size: 15px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.5);
+	border-color: #ffaa00;
+	cursor: pointer;
+}
+
+.botones button:hover{
+	color: #FFF;
+	background-color: #ffaa00;
+	border-color: #FFF;
+}
+
+.botones .nosotros{
+	display: flex;
+	float: right;
+	padding: 10px;
+	margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+	.atributos2{
+		width: 400px;
+	}
+
+}
+
+@media (max-width: 992px){
+	.atributos2{
+		width: 100%;
+	}
+
+	.cont_info .titulo{
+	width: 100%;	
+
+	}
+	.cont_info .titulo h1{
+		font-size: 50px;
+		text-align: center;
+	}
+	.botones{
+		width: 100%
+	}
+	.botones button{
+		width: 150px;
+}
+  
+}

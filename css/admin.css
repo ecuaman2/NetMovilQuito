@@ -1,0 +1,98 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: #444;
+}
+.contenedorbotones_clientes{
+	margin: 10px;
+	color: #fff;
+}
+
+.contenedorbotones_clientes input{
+	padding: 5px;
+	border-radius: 10px;
+	font-size: 18px;
+	border-style: none;
+}
+
+.contenedorbotones_clientes h2{
+	margin: 30px;
+	text-align: center;
+}
+
+.contenedorbotones_clientes #tabla_resultado .tabla{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.contenedorbotones_clientes #tabla_resultado .tabla th{
+	width: 200px;
+	padding: 5px;
+	background-color: #f72585;
+	border-radius: 3px;
+	margin-bottom: 5px;
+}
+
+.contenedorbotones_clientes #tabla_resultado .tabla td{
+	width: 200px;
+	padding: 5px;
+	background-color: #4361ee;
+}
+
+.cont_input {
+	width: 100%;
+	display: flex;
+}
+
+.cont_input .buscar{
+	width: 50%;
+}
+
+.cont_input .salir{
+	width: 50%;
+}
+
+.cont_input .salir .atras{
+	float: right;
+	background-color: #ff6f00;
+	color: #FFF;
+	font-size: 12px;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.cont_input .salir .atras:hover{
+	background-color: #ff9d00;
+}
+
+/* LOGIN*/
+
+.contenedor-form{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.contenedor-form .formulario{
+	width: 50%;	
+	margin-top: 80px;
+	background-color: #FFF;
+}
+
+.contenedor-form .formulario h2{
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	padding: 10px;
+}
+
+.contenedor-form .formulario form{
+	padding: 20px 0px 20px 0px;
+}
+
+.contenedor-form .formulario form input{
+	padding: 5px;
+	margin-bottom: 10px;
+}

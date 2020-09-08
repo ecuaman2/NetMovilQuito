@@ -1,0 +1,137 @@
+
+		
+			
+			<div class="encabezado">
+				<h1>
+					Distribuidor Autorizado de Tuenti
+				</h1>
+				<h3>
+					Pida su Chip TUENTI y Páguelo en su Casa.
+				</h3>
+				
+			</div>
+
+			<!--- TIPO DE SERVICIO -->
+
+
+			<div id="sub_contenedor_1">
+				<div id="opcion_1" onclick="opcion_1()">
+					<img src="img/movil.png">
+					<h3>Conservar mi número</h3>			
+				</div>
+				<div id="opcion_2" onclick="opcion_2()">
+					<img src="img/chip.png">
+					<h3>Línea Nueva</h3>	
+					
+				</div>
+			</div>		
+
+			<!--- COMBOS -->
+
+			<div id="combos">
+				<div id="combo_1" onclick="combo_1()">
+					<img src="img/combo1.png"><br>
+					<span class="combos_gb">$5 x 30Días</span><br>	
+					<span class="combos_min">30 Minutos</span>	
+
+
+				</div>
+				<div id="combo_2" onclick="combo_2()">
+					<img src="img/combo2.png"><br>
+					<span class="combos_gb">$10 x 30Días</span><br>
+					<span class="combos_min">80 Minutos</span><br>
+					<img class="regalo" src="img/auriculares.jpg">		
+				</div>
+				<div id="combo_3" onclick="combo_3()">
+					<img src="img/combo3.png"><br>
+					<span class="combos_gb">$20 x 30Días</span>	<br>
+					<span class="combos_min">400 Minutos</span>		<br>
+					<img class="regalo" src="img/parlante2.jpg">		
+				</div>
+				<div id="combo_4" onclick="combo_4()">
+					<img src="img/combo4.png"><br>
+					<span class="combos_gb">$25 x 30Días</span>	<br>
+					<span class="combos_min">Min Ilimitados</span>	<br>
+					<img class="regalo" src="img/parlante1.jpg">			
+				</div>
+			</div>	
+
+
+			<!--- FORMULARIO DE CONTACTO -->
+
+			<div id="datos_personales">
+					<h2>Datos de Nueva línea Tuenti.</h2>
+					<form name="myForm" action="javascript:void(0);" onsubmit="return boton()">
+						<label>Nombre y Apellido</label><br>
+						<input id="nombre" type="" name="" placeholder="&#xF007;" required><br>
+
+						<label>Cédula de Identidad</label><br>
+						<input id="cedula" type="number" name="" placeholder="&#xf2c2;" required><br>
+
+						<label>Número de Celular</label><br>
+						<input id="celular" type="number" name="" placeholder="&#xf10b;" required><br>
+
+						<label>Dirección de Entrega</label><br>
+						<input id="domicilio" type="text" name="" placeholder="&#xf041; Sector / Calles / #"  required><br>
+
+						<label>Referencia adicional de su Domicilio</label><br>
+						<textarea id="nota"></textarea><br>
+						<input type="submit" name="" value="Continuar">
+					</form>	
+			</div>
+
+			<!--- FORMULARIO DE CITA -->
+			<div id="contenedor_cita">
+					<h2>Día de Entrega</h2>
+					<form>
+						<div id="id_hoy" class="dia" onclick="hoy()">
+			            	<span>Hoy</span>
+			            	<input id="hoy" value="Diario" checked="" type="radio" name="modo_pago"> 			
+						</div>
+						<div class="dia" onclick="maniana()">
+			            	<span>Mañana</span>
+			            	<input id="maniana" value="Semanal" type="radio" name="modo_pago"> 						
+						</div>					
+						<div class="dia" onclick="p_maniana()">
+		                	<span>Pasado de Mañana</span>
+		                	<input id="p_maniana"  value="Mensual" type="radio" name="modo_pago">					
+						</div>    
+					</form>	
+
+					<h2>Horario del Día</h2>
+					<form>
+						<div class="dia" onclick="la_maniana()">
+			            	<span>En la Mañana</span>
+			            	<input id="la_maniana" value="Diario" checked="" type="radio" name="modo_pago"> 			
+						</div>
+						<div class="dia" onclick="la_tarde()">
+			            	<span>En la Tarde</span>
+			            	<input id="la_tarde" value="Semanal" type="radio" name="modo_pago"> 						
+						</div>	   
+					</form>
+		            <button onclick="cita()">Confirmar</button>
+			</div>
+
+
+			<!--- GRACIAS -->
+			<div id="contenedor_final">
+				<h2>Solicitud Recibida</h2>
+					<div>					
+						<div class="animacion">			
+							<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+							<lottie-player src="https://assets6.lottiefiles.com/datafiles/8UjWgBkqvEF5jNoFcXV4sdJ6PXpS6DwF7cK4tzpi/Check Mark Success/Check Mark Success Data.json"  background="transparent"  speed="1"  autoplay count="1"></lottie-player>
+						</div>					
+					</div>
+					<p>
+						El pedido del chip fue recibido exitosamente, pronto recibirá una llamada para confirmar la entrega a su domicilio.
+					</p>
+
+				<h3>
+					NetMovil Distribuidor Autorizado
+				</h3>
+				<h4>
+					Gracias por preferirnos
+				</h4>
+
+		        <button onclick="ir_inicio()">Página de Inicio</button>
+			</div>
