@@ -121,10 +121,15 @@ $pdf->MultiCell(0,6,$column_domicilio,1);
 
 
 //Create lines (boxes) for each ROW (Product)
+//Contar Cobradores de Jefe
+    $contar_registros = "SELECT id FROM solicitudes";
+    $resultado_soli = mysqli_query($conexion,$contar_registros);
+    $total_reg = mysqli_num_rows($resultado_soli); 
+
 //If you don't use the following code, you don't create the lines separating each row
 $i = 0;
 $pdf->SetY($Y_Table_Position);
-while ($i < 5)
+while ($i < $total_reg)
 {
     $pdf->SetX(10);
     $pdf->MultiCell(0,6,'',1);

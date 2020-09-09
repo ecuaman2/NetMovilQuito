@@ -61,7 +61,7 @@
 
 			<div id="datos_personales">
 					<h2>Datos de Nueva línea Tuenti.</h2>
-					<form name="myForm" action="javascript:void(0);" onsubmit="return boton()">
+					<form name="myForm" action="javascript:void(0);" onsubmit="return formulario()">
 						<label>Nombre y Apellido</label><br>
 						<input id="nombre" type="" name="" placeholder="&#xF007;" required><br>
 
@@ -88,11 +88,11 @@
 			            	<span>Hoy</span>
 			            	<input id="hoy" value="Diario" checked="" type="radio" name="modo_pago"> 			
 						</div>
-						<div class="dia" onclick="maniana()">
+						<div id="id_maniana" class="dia" onclick="maniana()">
 			            	<span>Mañana</span>
 			            	<input id="maniana" value="Semanal" type="radio" name="modo_pago"> 						
 						</div>					
-						<div class="dia" onclick="p_maniana()">
+						<div id="id_p_maniana" class="dia" onclick="p_maniana()">
 		                	<span>Pasado de Mañana</span>
 		                	<input id="p_maniana"  value="Mensual" type="radio" name="modo_pago">					
 						</div>    
@@ -100,11 +100,11 @@
 
 					<h2>Horario del Día</h2>
 					<form>
-						<div class="dia" onclick="la_maniana()">
+						<div id="id_la_maniana" class="dia" onclick="la_maniana()">
 			            	<span>En la Mañana</span>
 			            	<input id="la_maniana" value="Diario" checked="" type="radio" name="modo_pago"> 			
 						</div>
-						<div class="dia" onclick="la_tarde()">
+						<div id="id_la_tarde" class="dia" onclick="la_tarde()">
 			            	<span>En la Tarde</span>
 			            	<input id="la_tarde" value="Semanal" type="radio" name="modo_pago"> 						
 						</div>	   

@@ -1,10 +1,16 @@
 
+/*BOTON SERVICIO*/
 function servicio(){
-	document.getElementById("include_contenido").style.display="none";
-	document.getElementById("include_combos").style.display="block";
+	setTimeout(function() {            
+
+		document.getElementById("include_contenido").style.display="none";
+		document.getElementById("include_combos").style.display="block";
+
+    }, 200);
 
 }
 
+/*BOTON TIENDA DE MENU MOVIL*/
 function nav_tienda(){
 	document.getElementById("ul").style.left="-100%";
 	document.getElementById("include_contenido").style.display="none";
@@ -26,54 +32,22 @@ function nav_tienda(){
 	window.location.hash = "combos";
 }
 
+/* NAV  MOVIL - abrir y cerrar*/
 function nav_open(){
-    /*CONOCER EL ATRIBUTO DE UL PARA SABER SU LEFT
-	Para recurdar... en este codigo me demora como
-	 2 horas tratandolo de hacer funsionar ._. el 
-	 problema era que escribia 0 en vez de 0px ._.
-    */
+	setTimeout(function() {     
+		var element = document.getElementById('ul'),
+	    style = window.getComputedStyle(element),
+	    left = style.getPropertyValue('left');
 
-	var element = document.getElementById('ul'),
-    style = window.getComputedStyle(element),
-    left = style.getPropertyValue('left');
-
-    if (left != "0px") {
-    	document.getElementById("ul").style.left="0px";
-    }else{
-    	document.getElementById("ul").style.left="-100%";
-
-    }   
+	    if (left != "0px") {
+	    	document.getElementById("ul").style.left="0px";
+	    }else{
+	    	document.getElementById("ul").style.left="-100%";
+	    } 
+    }, 200);
 
 }
 
-
-
-/*
-
-window.onhashchange=function(){	
-
-		var element_combos = document.getElementById('combos'),
-	    style_combos = window.getComputedStyle(element_combos),
-	    combo2 = style_combos.getPropertyValue('display');
-
-	    if (combo2 == "flex") {
-
-	    	document.getElementById("combos").style.display="none";
-			document.getElementById("include_combos").style.display="block";
-			document.getElementById("include_contenido").style.display="block";
-		}
-
-		var element_datos = document.getElementById('datos_personales'),
-	    style_datos = window.getComputedStyle(element_datos),
-	    datos2 = style_datos.getPropertyValue('display');
-
-	    if (datos == "block") {
-
-	    	document.getElementById("datos_personales").style.display="none";
-			document.getElementById("combos").style.display="flex";
-		}
-}
-*/
 
 /*
 PREGUNTAR ANTES DE SALIR
@@ -96,6 +70,16 @@ window.onbeforeunload = function(e) {
     	  return "Do you want to exit this page?"
     }  
 };
+
+
+/*BOTON FINAL DE REGISTRO*/
+function ir_inicio(){
+	setTimeout(function() {   
+		location.href = "index.php"; 
+    }, 200);	
+
+}
+
 
 
 
