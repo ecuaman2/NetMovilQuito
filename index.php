@@ -3,6 +3,7 @@
 <head>
 	<title>NetMovil - Distribuidor Autorizado Tuenti</title>
 	<meta charset="utf-8">
+<<<<<<< Updated upstream
 	<link rel="stylesheet" type="text/css" href="css/navegacion.css?v0.3">
     <!--<link rel="stylesheet" type="text/css" href="css/imagen_descripcion.css">-->
 	<!--<link rel="stylesheet" type="text/css" href="css/estilos.css?v0.3">-->
@@ -14,12 +15,28 @@
 	<!--<link rel="stylesheet" href="css/menu.css?v=0.1">-->
 	<link rel="stylesheet" href="css/normalize.css?v=0.1">
 	<link rel="stylesheet" href="css/main.css?v=0.1">
+=======
+	<link rel="stylesheet" type="text/css" href="css/navegacion.css?v0.4">
+    <link rel="stylesheet" type="text/css" href="css/imagen_descripcion.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css?v0.4">
+	<link rel="stylesheet" type="text/css" href="css/combos.css?v0.4">
+	<link rel="stylesheet" type="text/css" href="css/datos.css?v0.4">
+	<link rel="stylesheet" type="text/css" href="css/cita.css?v0.4">
+	<link rel="stylesheet" type="text/css" href="css/gracias.css?v0.4">
+	<link rel="stylesheet" type="text/css" href="css/footer.css?v0.4">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+>>>>>>> Stashed changes
 
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>    
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/jquery-3.1.0.min.js"></script>
+<<<<<<< Updated upstream
     
+=======
+    <link rel="stylesheet" href="css/menu.css?v=0.2">
+>>>>>>> Stashed changes
 
 	<link rel="stylesheet" href="path/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">   
@@ -55,8 +72,8 @@
 
 	
 
-<script type="text/javascript" src="js/script.js?v0.1"></script>
-<script type="text/javascript" src="js/navegacion.js?v0.1"></script>
+<script type="text/javascript" src="js/script.js?v0.2"></script>
+<script type="text/javascript" src="js/navegacion.js?v0.2"></script>
 
 
 </body>
