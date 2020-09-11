@@ -4,7 +4,7 @@
 .cont_img{
   background-image: url("../img/hero.png");
   background-color: #001b29; /* Used if the image is unavailable */
-  height: 550px; /* You must set a specified height */
+  height: 77.4vh; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
