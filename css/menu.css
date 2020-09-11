@@ -13,19 +13,19 @@ body{
 
 nav{
   background: #8411ab;
-  height: 80px;
+  height: 60px;
   width: 100%;
 }
 
 nav a{
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .logo h1{
   color: #FFF;
-  height: 40px;
+  height: auto;
   margin-left: 30px;
-  margin-top: 9px;
+  margin-top: 20px;
 }
 
 nav label.logo{
@@ -38,13 +38,6 @@ nav label.logo{
   font-weight: 900;
 }
 
-nav label.logo a img{
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  margin-left: 20px;
-
-}
 
 nav ul{
   width: 70%;
@@ -62,7 +55,7 @@ nav ul .menu_java{
 nav ul li{
   width: 100%;
   display: flex;
-  line-height: 80px;
+  line-height: 60px;
   justify-content: center;
   align-items: center;
 
@@ -146,7 +139,7 @@ nav .submenu_company{
   width: 325px;
   display: none;
   position: absolute;
-  top: 80px;
+  top: 60px;
   background: #2c3e50;
   color: #fff;
   padding: 5px 5px 5px 5px;
@@ -188,7 +181,7 @@ nav .checkbtn{
   font-size: 30px;
   color: white;
   float: right;
-  line-height: 80px;
+  line-height: 60px;
   margin-right: 40px;
   cursor: pointer;
   display: none;
@@ -239,7 +232,7 @@ nav #check{
     width: 100%;
     height: 500px;
     background: #2c3e50;
-    top: 80px;
+    top: 60px;
     left: -100%;
     text-align: center;
     transition: all .5s;

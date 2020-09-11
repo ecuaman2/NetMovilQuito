@@ -14,8 +14,24 @@ include 'cn.php';
     $hora_ref = date('Y-m-d H:i:s');
     date_default_timezone_set('America/Guayaquil');
 
+    $fecha_actual = date("Y-m-d");
+
+    $entrega = "";
+    if ($dia_entrega == "Hoy") {
+        $entrega = $fecha_actual;
+    }
+
+    if ($dia_entrega == "Mañana") {
+        $entrega = date("Y-m-d",strtotime($fecha_actual."+ 1 days"));
+    }
+
+    if ($dia_entrega == "Pasado de Mañana") {
+        $entrega = date("Y-m-d",strtotime($fecha_actual."+ 2 days"));
+    }
+ 
+
 	// consunlta para insertar
-$insertar = "INSERT INTO solicitudes (combo, nombre, cedula, celular, domicilio, nota, dia_entrega, hora_entrega, fecha_reg, hora_ref) VALUES ('$combo', '$nombre', '$cedula', '$celular', '$domicilio', '$nota', '$dia_entrega', '$hora_entrega',now(), '$hora_ref')";
+$insertar = "INSERT INTO solicitudes (combo, nombre, cedula, celular, domicilio, nota, dia_entrega, hora_entrega, fecha_reg, hora_ref) VALUES ('$combo', '$nombre', '$cedula', '$celular', '$domicilio', '$nota', '$entrega', '$hora_entrega',now(), '$hora_ref')";
 //Ejecutar consultas
 $resultado = mysqli_query($conexion, $insertar);
 

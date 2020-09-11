@@ -39,6 +39,7 @@ function combo_1(){
 		combo = "Combo #1 Chip de 2Gigas";
 		document.getElementById("combos").style.display="none";
 		document.getElementById("datos_personales").style.display="block";
+		document.getElementById("h1_encabezado").innerHTML = "A domicilio sin costo adicional";
     }, 200);
 } 
 
@@ -47,6 +48,7 @@ function combo_2(){
 		combo = "Combo #2 Chip de 7 Gigas + Auriculares";
 		document.getElementById("combos").style.display="none";
 		document.getElementById("datos_personales").style.display="block";
+		document.getElementById("h1_encabezado").innerHTML = "A domicilio sin costo adicional";
     }, 200);
 } 
 
@@ -55,6 +57,7 @@ function combo_3(){
 		combo = "Combo #3 Chip de 15 Gigas + Parlante Mini Bluetooth";
 		document.getElementById("combos").style.display="none";
 		document.getElementById("datos_personales").style.display="block";
+		document.getElementById("h1_encabezado").innerHTML = "A domicilio sin costo adicional";
     }, 200);
 } 
 
@@ -63,6 +66,7 @@ function combo_4(){
 		combo = "Combo #4 Chip de 15 Gigas + Gran Parlantes Bluetooth";
 		document.getElementById("combos").style.display="none";
 		document.getElementById("datos_personales").style.display="block";
+		document.getElementById("h1_encabezado").innerHTML = "A domicilio sin costo adicional";
     }, 200);
 } 
 
@@ -82,6 +86,8 @@ function formulario(){
 	  	if (nombre != "" & cedula != "" & celular != "" & domicilio != "") {
 			document.getElementById("datos_personales").style.display="none";
 			document.getElementById("contenedor_cita").style.display="block";
+
+			document.getElementById("h1_encabezado").innerHTML = "Pídalo aquí, Páguelo en Casa!";
 	    	return false;
 	 	}
     }, 200);
@@ -229,6 +235,9 @@ function cita(){
 	        }
 	    });  
     }, 200);
+
+
+	document.getElementById("encabezado").style.display="none";
 } 
 
 

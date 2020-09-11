@@ -2,8 +2,7 @@
 /*IMAGEN EN GRANDE*/
 
 .cont_img{
-
-  background-image: url("../galeria/portada3.jpeg");
+  background-image: url("../img/hero.png");
   background-color: #001b29; /* Used if the image is unavailable */
   height: 550px; /* You must set a specified height */
   background-position: center; /* Center the image */
@@ -21,14 +20,13 @@
 .cont_info .titulo{
 	width: 50%;
 	padding: 10px;
-	margin-top: 20px;
 	background-color: rgba(0,0,0,0.3);
 }
 
 .cont_info .titulo h1{
 	display:flex;
 	font-size: 60px;
-	line-height: 60px;
+	margin: 0;
 }
 
 .cont_info .cont_des{
@@ -116,7 +114,7 @@
 
 	}
 	.cont_info .titulo h1{
-		font-size: 50px;
+		font-size: 40px;
 		text-align: center;
 	}
 	.botones{

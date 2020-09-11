@@ -15,11 +15,17 @@ require('fpdf/fpdf.php');
 include("../include/cn.php");
 
 
-
+$fecha_actual = date("Y-m-d");
 
 //Select the Products you want to show in your PDF file
-$sql9="SELECT * from solicitudes ORDER BY hora_entrega";
+$sql9="SELECT * from solicitudes WHERE dia_entrega= '$fecha_actual'  ORDER BY hora_entrega";
 $result9=mysqli_query($conexion,$sql9);
+
+
+//Contar Cantidad de Registros
+    $contar_registros = "SELECT id FROM solicitudes WHERE dia_entrega= '$fecha_actual'";
+    $resultado_soli = mysqli_query($conexion,$contar_registros);
+    $total_reg = mysqli_num_rows($resultado_soli); 
 
 //Initialize the 3 columns and the total
 $column_nombre = "";
@@ -55,8 +61,9 @@ $pdf->AddPage();
 
 
 $pdf->SetFont('Arial','B',20);
+$pdf->SetX(18);
+$pdf->Cell(80,10,'NetMovilQuito (' .$fecha_actual. ') #'.$total_reg,0,1,'C');
 
-$pdf->Cell(80,10,'Entrega NetMovilQuito',0,1,'C');
 
 //Fields Name position
 $Y_Fields_Name_position = 20;
@@ -121,10 +128,7 @@ $pdf->MultiCell(0,6,$column_domicilio,1);
 
 
 //Create lines (boxes) for each ROW (Product)
-//Contar Cobradores de Jefe
-    $contar_registros = "SELECT id FROM solicitudes";
-    $resultado_soli = mysqli_query($conexion,$contar_registros);
-    $total_reg = mysqli_num_rows($resultado_soli); 
+
 
 //If you don't use the following code, you don't create the lines separating each row
 $i = 0;

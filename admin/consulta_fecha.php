@@ -12,7 +12,7 @@ if ($conexion -> connect_errno)
 //////////////// VALORES INICIALES ///////////////////////
 $tabla="";
 
-$query="SELECT * FROM solicitudes ORDER BY fecha_reg DESC";
+$query="SELECT * FROM solicitudes ORDER BY dia_entrega DESC";
 
 
 
@@ -26,7 +26,7 @@ $originalDate = $q;
 $newDate = date("Y-m-d", strtotime($originalDate));
 
 	$query="SELECT * FROM solicitudes where
-		fecha_reg LIKE '%".$newDate."%'";
+		dia_entrega LIKE '%".$newDate."%'";
 }
 
 $buscarAlumnos=$conexion->query($query);
