@@ -79,14 +79,16 @@
   	font-family: Century Gothic;
 	font-size: 15px;
 	border-radius: 10px;
-	background-color: rgba(0,0,0,0.5);
+	border-style: none;
+	background-color: rgba(132,17,171,0.5);
 	border-color: #ffaa00;
 	cursor: pointer;
+	font-weight: 600;
 }
 
 .botones button:hover{
 	color: #FFF;
-	background-color: #ffaa00;
+	background-color: #8411ab;
 	border-color: #FFF;
 }
 
